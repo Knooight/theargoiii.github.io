@@ -2,7 +2,9 @@
 
 /* ---------------------font------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600&display=swap');
-
+:root{
+    --first-color: hsl(0, 5, 9);
+}
 
 body{
     font-family: 'Martian Mono', monospace;
