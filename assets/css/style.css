@@ -5,6 +5,9 @@
 
 :root{
     --body-color: hsl(0, 5%, 9%);
+    --color1: hsl(6.3, 97.3%, 71%);
+    --color3: hsl(51.5, 94.7%, 85.3%);
+    --container-color: rgb(30, 30, 31);
 
     --body-font: 'Martian Mono', monospace;
     --biggest-font-size: 1.5rem;
@@ -27,9 +30,10 @@ h1, h2, h3{
 }
 
 img{
-    width: 280px;
-    height: 280px;
+    width: 325px;
+    height: 325px;
 }
+
 .home__data{
     display: flexbox;
     align-items: center;
@@ -45,6 +49,56 @@ img{
 
 .home__title{
     right: 1rem;
+    margin-bottom: .9rem;
+}
+
+
+.home{
+    align-items: center;
+}
+
+
+
+.home__description {
+    margin-top: 0;
+    font-size: 13px;
+    width: 320px;
+    color: rgb(116, 62, 56);
+}
+
+
+/* ------------------===NAV===------------------------------ */
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+a:link {
+    text-decoration: none;
+    transition: .5s;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.button{
+    display: inline-block;
+    color: rgb(255, 238, 236);
+    background-color: hsl(6.3, 97.3%, 71%);
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 0 0 .6rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+    transition: .3s;
 }
 
 a, i span{
@@ -53,32 +107,52 @@ a, i span{
 i span{
     font-family: var(--body-font);
     font-size: 0.8rem;
+    transition: .5s;
 }
 
 i span:hover{
     color: azure;
-    transition: .3s;
+    transition: .5s;
 }
 
 a:hover{
     color: azure;
-    transition: .3s;
+    transition: .5s;
 }
 
-.home{
-    align-items: center;
-}
+@media screen and (max-width: 1023px) {
+    .nav__menu {
+        position: fixed;
+        bottom: 2rem;
+        background-color: var(--container-color);
+        box-shadow: 0 1.5px 9px black;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: .5rem 1rem;
+        border-radius: 1.25rem;
+        transition: .4s;
+    }
 
-.button{
-    display: inline-block;
-    color: #fff;
-    background-color: hsl(6.3, 97.3%, 71%);
-    padding: .5rem .5rem .5rem .5rem;
-    margin: 0 0 .6rem;
-    border-radius: .5rem;
-    cursor: pointer;
-}
+    .nav__list {
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem;
+        align-items: center;
+    }
 
-a:link {
-    text-decoration: none;
+    .nav__link {
+        display: flex;
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+     .nav__list i{
+        font-size: 1.3rem;
+     }
+
+     .nav__list span {
+        display: none;
+     }
 }
