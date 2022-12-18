@@ -2,10 +2,69 @@
 
 /* ---------------------font------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600&display=swap');
+
 :root{
-    --first-color: hsl(0, 5, 9);
+    --body-color: hsl(0, 5%, 9%);
+
+    --body-font: 'Martian Mono', monospace;
+    --biggest-font-size: 1.5rem;
+
+    /* font-weight */
+    --font-medium: 500;
+    --font-semibold: 600;
 }
 
 body{
-    font-family: 'Martian Mono', monospace;
+    margin: 1rem;
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+}
+
+h1, h2, h3{
+    color: bisque;
+    font-weight: var(--font-semibold);
+    font-size: 2rem;
+}
+
+img{
+    width: 280px;
+    height: 280px;
+}
+.home__data{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+}
+
+.home__title span{
+    color: hsl(6.3, 97.3%, 71%);
+}
+
+.home__title{
+    right: 1rem;
+}
+
+a, i span{
+    color: hsl(6.3, 97.3%, 71%);
+}
+i span{
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+}
+
+i span:hover{
+    color: azure;
+    transition: .3s;
+}
+
+a:hover{
+    color: azure;
+    transition: .3s;
+}
+
+.home{
+    align-items: center;
 }
