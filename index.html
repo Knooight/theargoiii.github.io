@@ -11,6 +11,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- ------------------===CSS===------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>The Argonaughts III</title>
@@ -18,67 +21,70 @@
 
 <body>
     <!-- ----------------===HEADER===---------------------------- -->
-    <header class="header" id="header">
-        <div class="nav__menu">
-            <nav class="nav_container">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class='bx bx-home-alt-2'>
+    <header class="header">
+        <nav class="container">
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link">
+                            <i class='bx bxs-home-alt-2'>
                                 <span>Home</span>
                             </i>
                         </a>
                     </li>
 
-                    <li class="videos">
-                        <a href="#videos" class="nav__link">
-                            <i class='bx bx-video'>
-                                <span>Videos</span>
-                            </i>
-                        </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#discord" class="nav__link">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
                             <i class='bx bxl-discord-alt'>
                                 <span>Discord</span>
                             </i>
                         </a>
                     </li>
 
-                    <li class="nav__item">
-                        <a href="https://www.youtube.com/@theargonautsiii75" class="nav__link">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
                             <i class='bx bxl-youtube'>
                                 <span>Youtube</span>
                             </i>
                         </a>
                     </li>
-                </nav>
+
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                            <i class='bx bxl-twitter'>
+                                <span>Twitter</span>
+                            </i>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
-        </ul>
-        <a href="" class="button nav_button">
-            Subscribe
-        </a>
-        </header>
+
+        </nav>
+        <a href="#" class="button nav">Subscribe</a>
+    </header>
 
     <!-- -----------------===MAIN===-------------------------- -->
-    <main class="main" id="home">
-        <section class="home section">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <img src="assets/img/argo_logo.jpg" alt="logo">
-                    <h1 class="home__title">
-                        The<br>
-                        <span class="argo">Argonaughts</span><br>
-                        <span class="three">III</span><br>
-                    </h1>
-                    <p class="home__description-info">
-                        @fatintkishan |  @alchemistein &#183; Co-founder
-                    </p>
-                </div>
-            </div>
-        </section>
+    <main class="home">
+        <div class="logo_main">
+            <img src="assets/img/argo_logo.jpg" alt="Argo.png">
+        </div>
+
+        <div class="home_title">
+            <h1>
+                <span class="the">The</span><br>
+                <span class="argo">Argonaughts</span><br>
+                <span class="three">III</span><br>
+            </h1>
+        </div>
+
+        <div class="home_description">
+            <p class="modertator">
+                @reader & @alchemistein &middot; co-founder
+            </p><br>
+        </div>
     </main>
+
 
     <!-- ----------------===MAIN.js===________________________ -->
     <script src="assets/js/main.js"></script>
