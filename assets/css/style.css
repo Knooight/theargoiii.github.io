@@ -1,6 +1,6 @@
 /* background color: #171515 */
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -9,6 +9,10 @@
 body {
     font-family: 'Martian mono', sans-serif;
     background-color: #171515;
+}
+
+p {
+    font-family: 'Martian mono', sans-serif;
 }
 
 ul {
@@ -31,6 +35,7 @@ a {
 /* ----------------===NAV===---------------------- */
 i:hover {
     color: bisque;
+    transition: .7s;
 }
 
 ul span:hover {
@@ -49,11 +54,12 @@ ul span:hover {
         margin: 1rem;
         font-size: 1em;
     }
-    
-    ul span{
+
+    ul span {
         display: none;
-        
+
     }
+
     .nav_menu {
         position: fixed;
         bottom: 0;
@@ -66,15 +72,22 @@ ul span:hover {
         margin-bottom: 1.1rem;
         box-shadow: 0 20px 10px rgb(16, 14, 14);
         overflow: hidden;
+        z-index: 1;
+    }
+
+    .logo_images {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
     }
 
     .logo_main {
-        position: fixed;
-        display: flex;
+        position: absolute;
+        display: inline-flex;
         top: 0;
         left: 0;
         right: 0;
-        align-items: flex-start;
         justify-content: center;
         padding-top: 40px;
     }
@@ -93,24 +106,34 @@ ul span:hover {
 
 
 /*----------------===LOGO===---------------------- */
+
 img {
     height: 250px;
     width: 250px;
     border-radius: 100%;
-    position: absolute;
+    /* position: relative; */
+}
+
+.logo_wrap {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(180deg,
+            #2b1b19 10%,
+            #242426 200%);
+    border-radius: 50%;
 }
 
 /* ---------------===HOME===---------------------- */
 .home {
     background: linear-gradient(180deg,
-                #261715 0%,
-                #171515 100%);
+            #261715 0%,
+            #171515 100%);
     padding-bottom: 0;
 }
 
 .home_title {
     position: relative;
-    top: 21rem;
+    top: 2rem;
     margin-left: 48px;
 }
 
@@ -128,13 +151,31 @@ img {
 
 .home_description {
     position: relative;
-    top: 22rem;
+    display: grid;
+    top: 0rem;
     margin-left: 48px;
-    font-size: .65rem;
     font-weight: 300;
     color: #642c28dd;
+    overflow: hidden;
 }
 
 .modertator {
+    position: relative;
+    top: 4rem;
     width: 17rem auto;
+    font-size: .65rem;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.about_us {
+    position: relative;
+    top: 1.5rem;
+    color: #833d38;
+    margin-right: 45px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: .75rem;
+    margin-bottom: 12rem;
 }
