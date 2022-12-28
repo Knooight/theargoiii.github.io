@@ -1,4 +1,7 @@
 /* background color: #171515 */
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -97,7 +100,6 @@ ul span:hover {
 .scroll-header {
     background-color: #202023;
     box-shadow: 0 20px 10px rgb(16, 14, 14);
-
 }
 
 .button {
@@ -159,7 +161,7 @@ img {
     overflow: hidden;
 }
 
-.modertator {
+.moderator {
     position: relative;
     top: 4rem;
     width: 17rem auto;
@@ -170,7 +172,7 @@ img {
 
 .about_us {
     position: relative;
-    top: 1.5rem;
+    top: 6.3rem;
     color: #833d38;
     margin-right: 45px;
     justify-content: center;
@@ -178,4 +180,46 @@ img {
     font-weight: 400;
     font-size: .75rem;
     margin-bottom: 12rem;
+}
+
+.videos {
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.vid_link {
+    margin-bottom: 2rem;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #130b0a;
+    transition: .7s;
+}
+
+iframe:hover{
+    box-shadow: 0 0 30px #833d38;
+}
+
+.vid_title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    color: #ce5c54;
+}
+
+.more, a{
+    position: relative;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-weight: 300;
+    font-size: 15px;
+    color: #833d38;
+    transition: .7s;
+}
+
+a:hover {
+    color: bisque;
 }
