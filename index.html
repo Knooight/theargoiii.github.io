@@ -6,6 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="assets/img/argo_logo.jpg">
 
     <!-- ------------------===BOXICONS===-------------------- -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -14,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <title>The Argonaughts III</title>
 </head>
@@ -22,7 +23,7 @@
 <body>
     <!-- ----------------===HEADER===---------------------------- -->
     <header class="header">
-        <nav class="container">
+        <nav class="nav-container grid">
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
@@ -43,7 +44,7 @@
 
                     <li class="nav_item">
                         <a href="#mods" class="nav_link">
-                            <i class='bx bxs-ghost' >
+                            <i class='bx bxs-ghost'>
                                 <span>Moderators</span>
                             </i>
                         </a>
@@ -61,104 +62,123 @@
             </div>
 
         </nav>
-        <a href="#" class="button nav">Subscribe</a>
+        <a href="#" class="nav_button">Subscribe</a>
     </header>
 
     <!-- -----------------===MAIN===-------------------------- -->
-    <main class="home" id="home">
-        <div class="logo_images">
-            <div class="logo_wrap"></div>
-            <div class="logo_main">
-                <img src="assets/img/argo_logo.jpg" alt="Argo.png">
-            </div>
+    <!-- <main class="home-container" id="home"> -->
+    <div class="logo">
+        <div class="logo_wrap">
+            <img class="logo_img" src="assets/img/argo_logo.jpg">
         </div>
+    </div>
 
-        <div class="home_title">
-            <h1>
-                <span class="the">The</span><br>
-                <span class="argo">Argonaughts</span><br>
-                <span class="three">III</span><br>
-            </h1>
-        </div>
+    <div class="home_title">
+        <h1>
+            <span class="the">The</span><br>
+            <span class="argo">Argonauts</span><br>
+            <span class="three">III</span><br>
+        </h1>
+    </div>
 
-        <div class="home_description">
-            <p class="moderator">
-                @reader & @alchemistein &middot; co-founder <strong>&checkmark;</strong>
-            </p><br>
+    <div class="home_description">
+        <p class="moderator">
+            @reader & @alchemistein &middot; co-founder <strong>&checkmark;</strong>
+        </p><br>
 
-            <p class="about_us">
-                Ahoy! Surfers of internet. Welcome aboard the <strong>Argo III</strong> crew. We make content on Books,
-                Anime,
-                Gaming.
-                You might also find us exploring other areas as well from time to time.<br><br>
+        <p class="about_us">
+            Ahoy! Surfers of internet. Welcome aboard the <strong>Argo III</strong> crew. We make content on Books,
+            Anime,Gaming. You might also find us exploring other areas as well from time to time.<br><br>
 
-                See you in the videos and until next time keep those fires of your passion burning!
-            </p>
-        </div>
+            See you in the videos and until next time keep those fires of your passion burning!
+        </p>
+    </div>
 
-        <div class="video container grid" id="videos">
-            <h3 class="vid_title">
-                Explore our videos
-            </h3>
-            <ul class="videos">
-                <li class="vid_link">
-                    <iframe src="https://www.youtube.com/embed/K_pVTWlX9rQ?" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </li>
+    <div class="video_container grid" id="videos">
+        <h3 class="vid_title">
+            Explore our videos
+        </h3>
+        <ul class="videos">
+            <li class="vid_link">
+                <iframe src="https://www.youtube.com/embed/K_pVTWlX9rQ?" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </li>
 
-                <li class="vid_link">
-                    <iframe src="https://www.youtube.com/embed/TigdlVPkRhY?controls=0" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </li>
+            <li class="vid_link">
+                <iframe src="https://www.youtube.com/embed/TigdlVPkRhY?controls=0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </li>
 
-                <li class="vid_link">
-                    <iframe src="https://www.youtube.com/embed/tMLBfJ2GzOo?controls=0" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </li>
-            </ul>
+            <li class="vid_link">
+                <iframe src="https://www.youtube.com/embed/tMLBfJ2GzOo?controls=0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </li>
+        </ul>
 
-            <p class="more"><a href="https://www.youtube.com/@theargonautsiii75" target="_blank" class="more">
-                    Explore more <strong>></strong>
-                </a>
-            </p>
-        </div>
-    </main>
+        <p class="more"><a href="https://www.youtube.com/@theargonautsiii75" target="_blank" class="more">
+                Explore more <strong>></strong>
+            </a>
+        </p>
+    </div>
+    <!-- </main> -->
 
     <main class="mods" id="mods">
         <h3 class="mod_title">Moderators</h3>
 
-        <ul class="card_profile_list">
-            <li class="card_profile">
-                <div class="card_container">
-                    <div class="card_border">
-                        <img src="assets/img/reader.jpg" alt="reader" class="profile_img">
-                    </div>
-                    <h4 class="pfp_name">@reader</h4>
-                    <p class="pfp_info">content creator</p>
-
-                    <!-- =====================SOCIAL-LIST========================= -->
-                    <ul class="card_social-list">
-                        <a href="https://facebook.com" target="_blank" class="social_link">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
-
-                        <a href="https://instagram.com" target="_blank" class="social_link">
-                            <i class='bx bxl-instagram-alt' ></i>
-                        </a>
-
-                        <a href="https://twitter.com" class="social_link">
-                            <i class='bx bxl-twitter' ></i>
-                        </a>
-                    </ul>
+        <div class="card_profile">
+            <div class="card_container">
+                <div class="card_border">
+                    <img src="assets/img/reader.jpg" alt="reader" class="profile_img">
                 </div>
-            </li>
-        </ul>
+                <h4 class="pfp_name">@reader</h4>
+                <p class="pfp_info">content creator</p>
+
+                <!-- =====================SOCIAL-LIST========================= -->
+                <ul class="card_social-list">
+                    <a href="https://facebook.com" target="_blank" class="social_link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="social_link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+
+                    <a href="https://twitter.com" class="social_link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+            
+            
+            </div>
+            <div class="card_container">
+                <div class="card_border">
+                    <img src="assets/img/alchem.jpg" alt="reader" class="profile_img">
+                </div>
+                <h4 class="pfp_name">@alchemistein</h4>
+                <p class="pfp_info">content creator</p>
+
+                <!-- =====================SOCIAL-LIST========================= -->
+                <ul class="card_social-list">
+                    <a href="https://facebook.com" target="_blank" class="social_link">
+                        <i class='bx bxl-facebook'>
+                        </i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="social_link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+
+                    <a href="https://twitter.com" class="social_link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </main>
 
 
