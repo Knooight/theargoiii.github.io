@@ -23,38 +23,34 @@
 <body>
     <!-- ----------------===HEADER===---------------------------- -->
     <header class="header">
-        <nav class="nav-container grid">
+        <nav class="nav container">
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#home" class="nav_link">
-                            <i class="bx bxs-home-alt-2">
+                        <a href="#home" class="nav_link active_link">
+                            <i class="bx bxs-home-alt-2"></i>
                                 <span>Home</span>
-                            </i>
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#videos" class="nav_link">
-                            <i class='bx bxs-videos'>
+                        <a href="#videos" class="nav_link active_link">
+                            <i class='bx bxs-videos'></i>
                                 <span>Videos</span>
-                            </i>
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#mods" class="nav_link">
-                            <i class='bx bxs-ghost'>
+                        <a href="#mods" class="nav_link active_link">
+                            <i class='bx bxs-ghost'></i>
                                 <span>Moderators</span>
-                            </i>
                         </a>
                     </li>
 
                     <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <i class='bx bxl-twitter'>
+                        <a href="#" class="nav_link active_link">
+                            <i class='bx bxl-twitter'></i>
                                 <span>Twitter</span>
-                            </i>
                         </a>
                     </li>
 
@@ -66,68 +62,78 @@
     </header>
 
     <!-- -----------------===MAIN===-------------------------- -->
-    <!-- <main class="home-container" id="home"> -->
-    <div class="logo">
-        <div class="logo_wrap">
-            <img class="logo_img" src="assets/img/argo_logo.jpg">
+    <section class="home-container grid" id="home">
+        <div class="logo">
+            <div class="logo_wrap">
+                <img class="logo_img" src="assets/img/argo_logo.jpg">
+            </div>
         </div>
-    </div>
 
-    <div class="home_title">
-        <h1>
-            <span class="the">The</span><br>
-            <span class="argo">Argonauts</span><br>
-            <span class="three">III</span><br>
-        </h1>
-    </div>
+        <div class="title-description_conatiner">
+            <div class="home_title">
+                <h1>
+                    <span class="the">The</span><br>
+                    <span class="argo">Argonauts</span><br>
+                    <span class="three">III</span><br>
+                </h1>
+            </div>
 
-    <div class="home_description">
-        <p class="moderator">
-            @reader & @alchemistein &middot; co-founder <strong>&checkmark;</strong>
-        </p><br>
+            <div class="home_description">
+                <p class="moderator">
+                    @reader & @alchemistein &middot; co-founder
+                </p><br>
 
-        <p class="about_us">
-            Ahoy! Surfers of internet. Welcome aboard the <strong>Argo III</strong> crew. We make content on Books,
-            Anime,Gaming. You might also find us exploring other areas as well from time to time.<br><br>
+                <p class="about_us">
+                    Ahoy! Surfers of internet. Welcome aboard the <strong>Argo III</strong> crew. We make content on
+                    Books,
+                    Anime,Gaming. You might also find us exploring other areas as well from time to time.<br><br>
 
-            See you in the videos and until next time keep those fires of your passion burning!
-        </p>
-    </div>
+                    See you in the videos and until next time keep those fires of your passion burning!
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <div class="video_container grid" id="videos">
+    <div class="video_container" id="videos">
         <h3 class="vid_title">
             Explore our videos
         </h3>
-        <ul class="videos">
-            <li class="vid_link">
+        <div class="videos grid">
+            <div class="vid_link">
                 <iframe src="https://www.youtube.com/embed/K_pVTWlX9rQ?" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </li>
+            </div>
 
-            <li class="vid_link">
+            <div class="vid_link">
                 <iframe src="https://www.youtube.com/embed/TigdlVPkRhY?controls=0" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </li>
+            </div>
 
-            <li class="vid_link">
+            <div class="vid_link">
                 <iframe src="https://www.youtube.com/embed/tMLBfJ2GzOo?controls=0" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </li>
-        </ul>
+            </div>
+
+            <div class="vid_link">
+                <iframe src="https://www.youtube.com/embed/ODi6CtQ5uPw?controls=0" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
 
         <p class="more"><a href="https://www.youtube.com/@theargonautsiii75" target="_blank" class="more">
                 Explore more <strong>></strong>
             </a>
         </p>
     </div>
-    <!-- </main> -->
 
-    <main class="mods" id="mods">
+    <section class="mods" id="mods">
         <h3 class="mod_title">Moderators</h3>
 
         <div class="card_profile">
@@ -152,8 +158,8 @@
                         <i class='bx bxl-twitter'></i>
                     </a>
                 </ul>
-            
-            
+
+
             </div>
             <div class="card_container">
                 <div class="card_border">
@@ -179,8 +185,10 @@
                 </ul>
             </div>
         </div>
-    </main>
+    </section>
 
+    <!-- ----------------===Footer===--------------------------- -->
+    <footer class="footer"></footer>
 
     <!-- ----------------===MAIN.js===________________________ -->
     <script src="assets/js/main.js"></script>
