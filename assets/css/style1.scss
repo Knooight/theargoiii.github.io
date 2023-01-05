@@ -132,7 +132,7 @@ header {
     }
 
     .nav_link {
-        padding: .7rem;
+        padding: .6rem;
         border-radius: 50%;
         color: var(--first-color);
         transition: .5s;
@@ -418,7 +418,7 @@ iframe:hover {
 
 @media screen and (max-width: 900px) {
     .videos {
-        grid-template-columns: repeat(1, 290px);
+        grid-template-columns: repeat(2, 290px);
     }
 
     .nav_menu {
@@ -442,7 +442,7 @@ iframe:hover {
     }
 
     .nav_link {
-        padding: .7rem;
+        padding: .6rem;
         border-radius: 50%;
         color: var(--first-color);
         transition: .5s;
@@ -462,5 +462,11 @@ iframe:hover {
 
     .active-link:hover {
         color: #171515;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .videos {
+        grid-template-columns: repeat(1, 290px);
     }
 }
