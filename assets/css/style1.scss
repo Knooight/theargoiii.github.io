@@ -138,12 +138,12 @@ header {
         transition: .5s;
     }
 
-    .nav_link:hover {
-        color: var(--lightest-color);
-    }
-
     .nav_link span {
         display: none;
+    }
+
+    .active-link {
+        color: #171515;
     }
     
 }
@@ -152,7 +152,7 @@ header {
     background: linear-gradient(180deg,
                 #ffe4c4 5%,
                 #f3ac89 90%);
-    color: #171515;
+    // color: #171515;
 }
 
 .active-link:hover {
@@ -454,5 +454,13 @@ iframe:hover {
 
     .nav_link span {
         display: none;
+    }
+
+    .active-link {
+        color: #171515;
+    }
+
+    .active-link:hover {
+        color: #171515;
     }
 }
